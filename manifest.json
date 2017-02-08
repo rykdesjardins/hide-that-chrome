@@ -4,6 +4,7 @@
     "description" : "Hides specific subjects, sponsored posts and bandwidth-heavy content from various websites",
     "version" : "0.1",
     "browser_action" : {
+	  "default_icon" : "./icon.ico",
       "default_popup" : "dropdown.html",
       "js" : ["dropdown.js"]
     }, 
