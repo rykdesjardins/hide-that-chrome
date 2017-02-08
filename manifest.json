@@ -9,7 +9,7 @@
     }, 
     "content_scripts" : [ {
         "matches" : ["https://www.facebook.com/*"],
-        "js" : ["facebook.js"]
+        "js" : ["websites/facebook.js"]
     } ],
     "permissions" : [
         "storage"
