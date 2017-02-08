@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="dropdown.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Hide That</h1>
+            <h2>Keywords</h2>
+            <div id="kwList">
+            </div>
+
+
+            <input type="text" id="addKW" placeholder="Enter new keyword" />
+            <p>Press the "enter" key after filling the keyword box to add it to the list.</p>
+            <p>To remove a keyword, simply empty the desired box and close this dialog.</p>
+    
+            <h2>Settings</h2>
+            <div id="settings-wrapper">
+                <article>
+                    <input type="checkbox" id="hideSponsored" name="hideSponsored" class="appSetting" />
+                    <label for="hideSponsored">Hide sponsored posts</label>
+                </article>
+                <article>
+                    <input type="checkbox" id="hidePictures" name="hidePictures" class="appSetting" />
+                    <label for="hidePictures">Hide most photo posts</label>
+                </article>
+                <article>
+                    <input type="checkbox" id="hideVideos" name="hideVideos" class="appSetting" />
+                    <label for="hideVideos">Hide video posts</label>
+                </article>
+                <article>
+                    <input type="checkbox" id="hideSidebar" name="hideSidebar" class="appSetting" />
+                    <label for="hideSidebar">Hide sidebar ads</label>
+                </article>
+                <article>
+                    <input type="checkbox" id="hardHide" name="hardHide" class="appSetting" />
+                    <label for="hardHide">Do not offer to show hidden posts</label>
+                </article>
+                <hr />
+                <article>
+                    <input type="checkbox" id="disable" name="disable" class="appSetting" />
+                    <label for="hideSponsored">Disable Hide That</label>
+                </article>
+            </div>
+
+            <h2>Credit</h2>
+            <div>
+                <p>
+                    Erik Desjardins, 2017
+                </p>
+            </div>
+        </div>
+
+        <script src="dropdown.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    width: 240px;
+    background-color: #333;
+    color: #FFF;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #555;
+    color: #eee;
+    font-weight: 400;
+}
+
+#kwList {
+    margin: 0;
+    padding: 5px 0px;
+}
+
+#kwList input {
+    font-size: 14px;
+    width: 91%;
+    box-sizing: content-box;
+    margin: 2px 5px;
+    padding: 2px 3px;
+    border: 2px dashed #F6F6F6;
+    color: #584545;
+}
+
+#addKW {
+    margin: 0px;
+    border: 0;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-top: 2px solid #e0cccc;
+    border-bottom: 2px solid #e0cccc;
+}
+
+p {
+    margin: 10px;
+    color: #555;
+}
+
+#settings-wrapper {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+article {
+    margin: 10px 0px 
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+}

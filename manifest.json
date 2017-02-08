@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "name" : "Hide That",
+    "description" : "Hides specific subjects, sponsored posts and bandwidth-heavy content from various websites",
+    "version" : "0.1",
+    "browser_action" : {
+      "default_popup" : "dropdown.html",
+      "js" : ["dropdown.js"]
+    }, 
+    "content_scripts" : [ {
+        "matches" : ["https://www.facebook.com/*"],
+        "js" : ["facebook.js"]
+    } ],
+    "permissions" : [
+        "storage"
+    ]
+}
