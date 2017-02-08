@@ -1,9 +1,17 @@
 var hiddenLinks = {};
+var HTselectors = {
+    allLinks : ".mbs._6m6._2cnj._5s6c a:not(.htparsed)",
+    allCaptions : "._5pbx.userContent p:not(.htparsed), .mtm._5pco:not(.htparsed)",
+    allSponsored : "._3e_2._m8c:not(.htparsed)",
+    allPictures : "._4-eo._2t9n._50z9:not(.htparsed)",
+    allVideos : "._5mly._45oh:not(.htparsed)"
+};
+
 window.HTkeywords = [];
 window.HTsettings = {};
 
 var hideAllLinks = function() {
-    var allLinks = document.querySelectorAll(".mbs._6m6._2cnj._5s6c a:not(.htparsed)");
+    var allLinks = document.querySelectorAll(HTselectors.allLinks);
 
     for (var i = 0; i < allLinks.length; i++) {
         var txt = allLinks[i].textContent.toLowerCase();
@@ -29,7 +37,7 @@ var hideAllLinks = function() {
         allLinks[i].classList.add('htparsed');
     }
 
-    var allCaptions = document.querySelectorAll('._5pbx.userContent p:not(.htparsed), .mtm._5pco:not(.htparsed)');
+    var allCaptions = document.querySelectorAll(HTselectors.allCaptions);
 
     for (var i = 0; i < allCaptions.length; i++) {
         var txt = allCaptions[i].textContent.toLowerCase();
@@ -53,7 +61,7 @@ var hideAllLinks = function() {
     }
 
     if (window.HTsettings.hideSponsored) {
-        var allSponsored = document.querySelectorAll('._3e_2._m8c:not(.htparsed)');
+        var allSponsored = document.querySelectorAll(HTselectors.allSponsored);
         for (var i = 0; i < allSponsored.length; i++) {
             var sponsored = allSponsored[i];
             sponsored.classList.add("htparsed")
@@ -68,7 +76,7 @@ var hideAllLinks = function() {
     }
 
     if (window.HTsettings.hidePhotos) {
-        var allPictures = document.querySelectorAll('._4-eo._2t9n._50z9:not(.htparsed)');
+        var allPictures = document.querySelectorAll(HTselectors.allPictures);
         for (var i = 0; i < allPictures.length; i++) {
             var pic = allPictures[i];
             pic.classList.add("htparsed")
@@ -83,7 +91,7 @@ var hideAllLinks = function() {
     }
 
     if (window.HTsettings.hideVideos) {
-        var allVideos = document.querySelectorAll('._5mly._45oh:not(.htparsed)');
+        var allVideos = document.querySelectorAll(HTselectors.allVideos);
         for (var i = 0; i < allVideos.length; i++) {
             var vid = allVideos[i];
             vid.classList.add("htparsed")
