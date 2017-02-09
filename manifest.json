@@ -3,17 +3,17 @@
     "name" : "Hide That",
     "description" : "Hides specific subjects, sponsored posts and bandwidth-heavy content from various websites",
     "version" : "0.1",
-	"icons": {
+    "icons": {
       "16": "icon32.png",
       "48": "icon48.png",
       "128": "icon128.png"  
     },
     "browser_action" : {
-	  "default_icon" : {
-	    "16": "icon32.png",
+      "default_icon" : {
+        "16": "icon32.png",
         "48": "icon48.png",
         "128": "icon128.png" 
-	  },
+	},
       "default_popup" : "dropdown.html",
       "js" : ["dropdown.js"]
     }, 
